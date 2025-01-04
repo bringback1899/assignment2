@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  --primary-color: #ffb34b; /* Define the primary color as a variable */
+}
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif; /* Use Lato as the default font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ /* For smaller screens (phones) */
+@media (max-width: 600px) {
+  
+  h1 {
+    font-size: 1.8rem; /* Smaller font size for mobile */
+  }
+
+  .location {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .location-name {
+    font-size: 1.5rem; /* Smaller title font size for mobile */
+    margin-bottom: 10px; /* Reduce space below the title */
+  }
+
+  .carousel {
+    max-width: 100%; /* Make the carousel full width on mobile */
+  }
+
+  .carousel-image {
+    max-height: 200px; /* Reduce image height for mobile */
+  }
+
+  .location-description {
+    font-size: 0.9rem; /* Smaller font size for description on mobile */
+    padding: 10px; /* Reduce padding for description */
+  }
+
+  button {
+    font-size: 16px; /* Smaller font size for buttons on mobile */
+    padding: 8px 16px; /* Adjust button padding for mobile */
+  }
+}
