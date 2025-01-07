@@ -5,15 +5,15 @@ import './TouristSpots.css';
 function TouristSpots() {
 
     const spots = [
-        { name: 'Penang Hill', image: '/penang-hill.png', link: '/penang-hill' },
-        { name: 'Armenian Street', image: '/armenian-street.png', link: '/armenian-street' },
-        { name: 'Kek Lok Si', image: '/kek-lok-si.png', link: '/kek-lok-si' },
-        { name: 'Batu Ferringhi', image: '/batu-ferringhi.png', link: '/batu-ferringhi' },
-        { name: 'Pinang Peranakan Mansion', image: '/pinang-peranakan-mansion.png', link: '/pinang-peranakan-mansion' },
-        { name: 'Kampung Agong', image: '/kampung-agong.png', link: '/kampung-agong' },
-        { name: 'Escape Theme Park', image: '/escape-theme-park.png', link: '/escape-theme-park' },
-        { name: 'Chew Jetty', image: '/chew-jetty.png', link: '/chew-jetty' },
-        { name: 'Entopia', image: '/entopia.png', link: '/entopia' },
+        { name: 'Penang Hill', image: '/touristSpotsImages/penang-hill.png', link: '/penang-hill' },
+        { name: 'Armenian Street', image: '/touristSpotsImages/armenian-street.png', link: '/armenian-street' },
+        { name: 'Kek Lok Si', image: '/touristSpotsImages/kek-lok-si.png', link: '/kek-lok-si' },
+        { name: 'Batu Ferringhi', image: '/touristSpotsImages/batu-ferringhi.png', link: '/batu-ferringhi' },
+        { name: 'Pinang Peranakan Mansion', image: '/touristSpotsImages/pinang-peranakan-mansion.png', link: '/pinang-peranakan-mansion' },
+        { name: 'Kampung Agong', image: '/touristSpotsImages/kampung-agong.png', link: '/kampung-agong' },
+        { name: 'Escape Theme Park', image: '/touristSpotsImages/escape-theme-park.png', link: '/escape-theme-park' },
+        { name: 'Chew Jetty', image: '/touristSpotsImages/chew-jetty.png', link: '/chew-jetty' },
+        { name: 'Entopia', image: '/touristSpotsImages/entopia.png', link: '/entopia' },
       ];
 
   return (

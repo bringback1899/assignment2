@@ -3,9 +3,9 @@ import Location from './Location'; // Import the reusable Location component
 
 function BatuFerringhi() {
   const images = [
-    'batu-ferringhi-1.png',
-    'batu-ferringhi-2.png',
-    'batu-ferringhi-3.png',
+    '/touristSpotsImages/batu-ferringhi-1.png',
+    '/touristSpotsImages/batu-ferringhi-2.png',
+    '/touristSpotsImages/batu-ferringhi-3.png',
     // Add more images as needed
   ];
 

@@ -3,9 +3,9 @@ import Location from './Location'; // Import the reusable Location component
 
 function KekLokSi() {
   const images = [
-    'kek-lok-si-1.png',
-    'kek-lok-si-2.png',
-    'kek-lok-si-3.png',
+    '/touristSpotsImages/kek-lok-si-1.png',
+    '/touristSpotsImages/kek-lok-si-2.png',
+    '/touristSpotsImages/kek-lok-si-3.png',
     // Add more images as needed
   ];
 

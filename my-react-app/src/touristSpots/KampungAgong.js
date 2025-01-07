@@ -3,9 +3,9 @@ import Location from './Location'; // Import the reusable Location component
 
 function KampungAgong() {
   const images = [
-    'kampung-agong-1.png',
-    'kampung-agong-2.png',
-    'kampung-agong-3.png',
+    '/touristSpotsImages/kampung-agong-1.png',
+    '/touristSpotsImages/kampung-agong-2.png',
+    '/touristSpotsImages/kampung-agong-3.png',
     // Add more images as needed
   ];
 

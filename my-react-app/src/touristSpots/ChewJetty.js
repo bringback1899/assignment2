@@ -3,9 +3,9 @@ import Location from './Location'; // Import the reusable Location component
 
 function ChewJetty() {
   const images = [
-    'chew-jetty-1.png',
-    'chew-jetty-2.png',
-    'chew-jetty-3.png',
+    '/touristSpotsImages/chew-jetty-1.png',
+    '/touristSpotsImages/chew-jetty-2.png',
+    '/touristSpotsImages/chew-jetty-3.png',
     // Add more images as needed
   ];
 

@@ -3,9 +3,9 @@ import Location from './Location'; // Import the reusable Location component
 
 function PinangPeranakanMansion() {
   const images = [
-    'pinang-peranakan-mansion-1.png',
-    'pinang-peranakan-mansion-2.png',
-    'pinang-peranakan-mansion-3.png',
+    '/touristSpotsImages/pinang-peranakan-mansion-1.png',
+    '/touristSpotsImages/pinang-peranakan-mansion-2.png',
+    '/touristSpotsImages/pinang-peranakan-mansion-3.png',
     // Add more images as needed
   ];
 

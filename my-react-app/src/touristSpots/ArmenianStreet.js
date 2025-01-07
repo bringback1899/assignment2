@@ -3,10 +3,10 @@ import Location from './Location'; // Import the reusable Location component
 
 function ArmenianStreet() {
   const images = [
-    'armenian-street-1.png',
-    'armenian-street-2.png',
-    'armenian-street-3.png',
-    'armenian-street-4.png',
+    '/touristSpotsImages/armenian-street-1.png',
+    '/touristSpotsImages/armenian-street-2.png',
+    '/touristSpotsImages/armenian-street-3.png',
+    '/touristSpotsImages/armenian-street-4.png',
     // Add more images as needed
   ];
 
@@ -26,7 +26,7 @@ function ArmenianStreet() {
   `;
 
   return (
-    <div  className="main-container">
+    <div>
       <Location name="Armenian Street" description={description} images={images} />
     </div>
   );

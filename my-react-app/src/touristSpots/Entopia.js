@@ -3,9 +3,9 @@ import Location from './Location'; // Import the reusable Location component
 
 function Entopia() {
   const images = [
-    'entopia-1.png',
-    'entopia-2.png',
-    'entopia-3.png',
+    '/touristSpotsImages/entopia-1.png',
+    '/touristSpotsImages/entopia-2.png',
+    '/touristSpotsImages/entopia-3.png',
     // Add more images as needed
   ];
 

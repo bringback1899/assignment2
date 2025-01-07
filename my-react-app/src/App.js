@@ -11,19 +11,52 @@ import EscapeThemePark from './touristSpots/EscapeThemePark';
 import ChewJetty from './touristSpots/ChewJetty';
 import Entopia from './touristSpots/Entopia';
 
+//import hotel components
+import HighBudgetHotel from './Components/HighBudgetHotel';
+import MediumBudgetHotel from './Components/MediumBudgetHotel';
+import LowBudgetHotel from './Components/LowBudgetHotel';
+import Navbar from './Navbar.jsx';
+
+
 function App() {
   const location = useLocation();
 
   return (
-    <div style={{ backgroundColor: 'var(--primary-color)', minHeight: '100vh' }}>
+    <div  className="homepage-container" style={{  minHeight: '100vh',paddingTop: '80px'  }}>
+      <Navbar />
       {location.pathname === '/' && (
         <div>
           <h1>Welcome to Penang </h1>
           <h2>Dont know what to eat? Dont know where to go? Dont know where to stay?</h2>
           <h2>DONT WORRY WE GOT YOU!!!</h2>
+
+          {/* Image for About Us Section */}
+          <div>
+            <img 
+              src="/aboutus.jpg" 
+              alt="About Us" 
+              className="about-us-image" 
+            />
+            <div className="about-us-description">
+              <p>We are students from Universiti Sains Malaysia XD Here at Penang, we provide the best experiences, from cultural spots to top-tier accommodations. Our goal is to help you explore the beauty of this amazing island!</p>
+            </div>
+          </div>
+
           <nav>
-            <Link to="/tourist-spots">Explore Tourist Spots</Link>
-          </nav>
+  <Link to="/tourist-spots">
+    <button>Explore Tourist Spots</button>
+  </Link>
+  <Link to="/HighBudgetHotel">
+    <button>High Budget Hotels</button>
+  </Link>
+  <Link to="/MediumBudgetHotel">
+    <button>Medium Budget Hotels</button>
+  </Link>
+  <Link to="/LowBudgetHotel">
+    <button>Low Budget Hotels</button>
+  </Link>
+</nav>
+
         </div>
       )}
       <Routes>
@@ -37,6 +70,11 @@ function App() {
         <Route path="/escape-theme-park" element={<EscapeThemePark />} />
         <Route path="/chew-jetty" element={<ChewJetty />} />
         <Route path="/entopia" element={<Entopia />} />
+
+        <Route path="/HighBudgetHotel" element={<HighBudgetHotel />} />
+        <Route path="/MediumBudgetHotel" element={<MediumBudgetHotel />} />
+        <Route path="/LowBudgetHotel" element={<LowBudgetHotel />} />
+
       </Routes>
     </div>
   );

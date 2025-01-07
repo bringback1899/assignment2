@@ -3,9 +3,9 @@ import Location from './Location'; // Import the reusable Location component
 
 function PenangHill() {
   const images = [
-    'penang-hill-1.png',
-    'penang-hill-2.png',
-    'penang-hill-3.png',
+    '/touristSpotsImages/penang-hill-1.png',
+    '/touristSpotsImages/penang-hill-2.png',
+    '/touristSpotsImages/penang-hill-3.png',
     // Add more images as needed
   ];
 

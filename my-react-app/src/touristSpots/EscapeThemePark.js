@@ -3,9 +3,9 @@ import Location from './Location'; // Import the reusable Location component
 
 function EscapeThemePark() {
   const images = [
-    'escape-theme-park-1.png',
-    'escape-theme-park-2.png',
-    'escape-theme-park-3.png',
+    '/touristSpotsImages/escape-theme-park-1.png',
+    '/touristSpotsImages/escape-theme-park-2.png',
+    '/touristSpotsImages/escape-theme-park-3.png',
     // Add more images as needed
   ];
 
