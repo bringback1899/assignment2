@@ -1,0 +1,100 @@
+
+/* Overall tourist spots container */
+.tourist-spots {
+    min-height: 100vh;
+    text-align: center;
+    font-size: 2rem; /* Title font size */
+    color: white;
+    
+   
+  }
+  
+  /* Title section */
+  .tourist-title {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  /* Flag styling */
+  .tourist-flag {
+    width: 110px;
+    margin-left: 20px;
+    vertical-align: middle;
+  }
+  
+  /* Main content section */
+  .main-content {
+    display: flex; /* Arrange boxes in a row */
+  flex-wrap: wrap; /* Allow wrapping to the next row if screen size is small */
+  gap: 20px; /* Add space between the boxes */
+  justify-content: center; /* Center the row content */
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 1200px; /* Limit the row width */
+  }
+  
+  /* Image wrapper styling */
+  .image-wrapper {
+    text-align: center;
+    margin: auto;
+    position: relative;
+  }
+  
+  /* Image styling */
+  .spot-image {
+    width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+ 
+  }
+  
+  /* Text under the image */
+  .image-text {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: black;
+  }
+
+  /* Button styling */
+.spot-button {
+    position: absolute; /* Position button relative to the image */
+  bottom: -15px; /* Slightly below the image */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #ff0070; 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  /* Button hover effect */
+  .spot-button:hover {
+    background-color: #e60073; 
+    transform: translateX(-50%) scale(1.1);
+  }
+
+  /* Each spot box */
+.spot {
+    background-color: #f2f2f2; /* Light grey background */
+    padding: 20px 20px 30px; /* Add padding inside the box */
+    border-radius: 10px; /* Rounded corners for the box */
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    text-align: center;
+    height: auto;
+    width: 320px; /* Box width (slightly larger than the image) */
+    position: relative; /* For positioning the button inside */
+    margin-bottom: 20px;
+  }
+  
