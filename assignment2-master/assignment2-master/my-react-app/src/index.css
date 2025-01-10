@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  --primary-color: #ffb34b; /* Define the primary color as a variable */
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Landing section */
+.landing-section{
+  height: 100vh;
+  /* Background image settings */
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/public/background.jpg'); /* Replace with your image path */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  position: relative; /* For overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.landing-section h1 {
+  font-size: 5rem;
+  color: #ffb34b;
+  margin-bottom: 50px;
+  font-weight: bold;
+  text-shadow: 
+        -1px -1px 0 #007bff, /* Top-left shadow */
+        1px -1px 0 #007bff,  /* Top-right shadow */
+        -1px 1px 0 #007bff,  /* Bottom-left shadow */
+        1px 1px 0 #007bff; 
+
+}
+
+.landing-section h2 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.landing-section a{
+  color: #ffb34b;
+  text-decoration: none;
+}
+
+.explore-button{
+  color: #ffb34b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chevron {
+  --s: 8px; /* control the shape (can be percentage) */
+  width: 40px;
+  aspect-ratio: 5/3;
+  clip-path: polygon(0 0,0 var(--s),50% 100%,100% var(--s),100% 0,50% calc(100% - var(--s)));
+  background: #ffb34b;
+  align-self: center;
+  animation-name: bobbing;
+  animation-duration: 1.2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes bobbing {
+  from{
+    transform: translateY(0);
+  }
+  to{
+    transform: translateY(10px);
+  }
+}
+
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  height: 60px;
+  width: 100%;
+  background-color: #ffb34b;
+  z-index: 1;
+  display: flex; /* Add flexbox */
+  justify-content: space-between; /* Space between logo and links */
+  align-items: center; /* Vertically center logo and links */
+  padding:0 20px  ; /* Add padding for spacing */
+}
+
+#navbar ul {
+  list-style: none;
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-around; /* Distribute space evenly */
+  align-items: center; /* Align items vertically */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  list-style: none;
+
+}
+
+#navbar li {
+  width: 25%;
+  height: 100%;
+  float: left;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+}
+
+.navbar-links {
+  width: 60%;
+  margin: auto;
+  float: right;
+  margin-right:20px;
+}
+
+.navbutton {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  max-height: 60px;
+  line-height: 60px;
+}
+
+.navbutton:link,
+.navbutton:visited {
+  color: black;
+  background-color: #ffb34b;
+  transition: background-color 0.4s;
+}
+
+.navbutton:hover,
+.navbutton:active {
+  color: black;
+  background-color: #ff9400;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  height:100%; 
+}
+.logo {
+  width: 55.5px; /* Set the width of the logo */
+  height: 100%; /* Maintain aspect ratio */
+}
+
+.logo img {
+  width: 100%; /* Ensure the image fills the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* About Us Card */
+.about-us-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  margin-top: 70px;
+  padding: 20px;
+  max-width: 800px;
+  text-align: center;
+  
+}
+
+.about-us-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top:20px;
+}
+
+.about-us-text p {
+  line-height: 1.6;
+  color: #000000;
+  font-size: 1rem;
+}
+
+.footer {
+  background-color: #ffb34b;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+  color: rgb(12, 4, 35);
+}
+
+.footer a {
+  color: rgb(51, 0, 255);
+  
+}
+/* General styling for the card section */
+.card-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Styling for each individual card */
+.info-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 350px; /* Bigger card width */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Hover effect for the cards */
+.info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Styling for the card images */
+.card-image {
+  width: 100%;
+  height: 300px; /* Larger image height */
+  object-fit: cover;
+}
+
+/* Styling for the card buttons */
+.card-button {
+  display: block;
+  width: 100%;
+  padding: 20px; /* Increased padding for a bigger button */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 20px; /* Larger font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Remove underline */
+  margin:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Hover effect for the buttons */
+.card-button:hover {
+  background-color: #0056b3;
+}
+
+/* Remove underline from the Link */
+.info-card a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure the link fills the entire card */
+}
+
+
+/* Media queries */
+@media only screen and (max-width: 800px) {
+  .navbar-links {
+    width: 90%;
+  }
+  
+ 
+}
+

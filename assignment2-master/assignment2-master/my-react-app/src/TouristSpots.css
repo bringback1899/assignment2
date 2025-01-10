@@ -1,0 +1,147 @@
+
+/* Overall tourist spots container */
+.tourist-spots {
+  min-height: 100vh;
+  text-align: center;
+  font-size: 2rem; /* Title font size */
+  color: #333; /* Darker text color for better readability */
+  background-color: #f2f2f2; /* Match background color */
+  padding: 20px;   
+}
+
+/* Title section */
+.tourist-title {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #000000; 
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+
+/* Flag styling */
+.tourist-flag {
+  width: 110px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+/* Main content section */
+.main-content {
+  display: flex; /* Arrange boxes in a row */
+  flex-wrap: wrap; /* Allow wrapping to the next row if screen size is small */
+  gap: 55px; /* Add space between the boxes */
+  justify-content: center; /* Center the row content */
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 1200px; /* Limit the row width */
+}
+
+/* Each spot box */
+.spot {
+  background-color: white; /* Light grey background */
+  padding: 20px 20px 30px; /* Add padding inside the box */
+  border-radius: 10px; /* Rounded corners for the box */
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  text-align: center;
+  height: auto;
+  width: 320px; /* Box width (slightly larger than the image) */
+  position: relative; /* For positioning the button inside */
+  margin-bottom: 20px;
+  border: solid 0.5px black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition */
+}
+
+/* Hover effect for the spot boxes */
+.spot:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Image wrapper styling */
+.image-wrapper {
+  text-align: center;
+  margin: auto;
+  position: relative;
+}
+
+/* Image styling */
+.spot-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  border: solid 0.5px black;
+}
+
+/* Text under the image */
+.image-text {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Button styling */
+.spot-button {
+  position: absolute; /* Position button relative to the image */
+  bottom: -15px; /* Slightly below the image */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #007bff; /* Use the same blue color */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight:500;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Button hover effect */
+.spot-button:hover {
+  background-color: #0056b3; /* Use the same hover color */
+  transform: translateX(-50%) scale(1.1);
+}
+
+/* Title underline */
+.title-underline {
+  width: 10%;
+  height: 4px;
+  background-color: #ff9400; /* Match underline color */
+  margin-top: 20px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Misc */
+.center {
+  width: 60%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.filler {
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+      grid-template-columns: repeat(2, 1fr); /* 2 boxes per row on smaller screens */
+      gap: 20px; /* Reduced gap for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+      grid-template-columns: 1fr; /* 1 box per row on mobile */
+      gap: 10px; /* Further reduced gap for mobile */
+  }
+}
